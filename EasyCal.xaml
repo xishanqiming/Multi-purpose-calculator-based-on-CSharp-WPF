@@ -1,0 +1,208 @@
+﻿<!--  EasyCal.xaml for EasyCal.xaml.cs
+      @author: CHANG WEI-LIN 
+      @Last Modify: 3/21/2023
+      @About: This program is for an easy calculator with C# WPF.
+    -->
+
+<Window x:Class="Lab2_Scientific_Calculator_With_CSharp_WPF.EasyCal" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:local="clr-namespace:Lab2_Scientific_Calculator_With_CSharp_WPF" 
+        
+        mc:Ignorable="d" Title="简易计算器" HorizontalAlignment="Center" 
+        VerticalAlignment="Center" MinWidth="800" MinHeight="450" 
+        MaxWidth="800" MaxHeight="450" FontSize="16" ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" Icon="/business_calculation_icon.png" 
+        Background="#FFD4D4D4" Width="800" Height="450">
+    
+    <Grid>
+        <TextBox x:Name="ResultTextBox" 
+                 HorizontalAlignment="Right" 
+                 Margin="0,10,30,0" 
+                 VerticalAlignment="Top" 
+                 TextWrapping="Wrap"
+                 Width="720" 
+                 Height="70" 
+                 FontSize="24" 
+                 TextAlignment="Right" 
+                 TextChanged="ResultTextBox_TextChanged" 
+                 PreviewTextInput="TextBox_PreviewTextInput"/>
+
+        <Button Content="7" 
+                HorizontalAlignment="Left" 
+                Margin="50,100,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="NumberButton_Click" />
+
+        <Button Content="8" 
+                HorizontalAlignment="Left" 
+                Margin="150,100,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="NumberButton_Click" />
+
+        <Button Content="9" 
+                HorizontalAlignment="Left" 
+                Margin="250,100,0,0" 
+                VerticalAlignment="Top"
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="NumberButton_Click" />
+
+        <Button Content="+" 
+                HorizontalAlignment="Left" 
+                Margin="350,100,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="OperatorButton_Click" />
+
+        <Button Content="4" 
+                HorizontalAlignment="Left" 
+                Margin="50,200,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="NumberButton_Click" />
+
+        <Button Content="5" 
+                HorizontalAlignment="Left" 
+                Margin="150,200,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="NumberButton_Click" />
+
+        <Button Content="6" 
+                HorizontalAlignment="Left" 
+                Margin="250,200,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="NumberButton_Click" />
+
+        <Button Content="-" 
+                HorizontalAlignment="Left" 
+                Margin="350,200,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="OperatorButton_Click" />
+
+        <Button Content="1" 
+                HorizontalAlignment="Left" 
+                Margin="50,300,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="NumberButton_Click" />
+
+        <Button Content="2" 
+                HorizontalAlignment="Left" 
+                Margin="150,300,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="NumberButton_Click" />
+
+        <Button Content="3" 
+                HorizontalAlignment="Left" 
+                Margin="250,300,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="NumberButton_Click" />
+
+        <Button Content="*" 
+                HorizontalAlignment="Left" 
+                Margin="450,200,0,0" 
+                VerticalAlignment="Top" 
+                Width="75" 
+                Height="75" 
+                FontSize="24" 
+                Click="OperatorButton_Click" />
+
+        <Button Content="0"
+                HorizontalAlignment="Left"
+                Margin="350,300,0,0"
+                VerticalAlignment="Top"
+                Width="75"
+                Height="75"
+                FontSize="24"
+                Click="NumberButton_Click" />
+
+        <Button Content="." 
+            HorizontalAlignment="Left" 
+            Margin="450,300,0,0" 
+            VerticalAlignment="Top" 
+            Width="75" 
+            Height="75" 
+            FontSize="24" 
+            Click="NumberButton_Click" />
+
+        <Button Content="=" 
+            HorizontalAlignment="Left" 
+            Margin="650,200,0,0" 
+            VerticalAlignment="Top" 
+            Width="75" 
+            Height="75" 
+            FontSize="24" 
+            Click="EqualsButton_Click" />
+
+        <Button Content="/" 
+            HorizontalAlignment="Left" 
+            Margin="550,200,0,0" 
+            VerticalAlignment="Top" 
+            Width="75" 
+            Height="75" 
+            FontSize="24" 
+            Click="OperatorButton_Click" />
+
+        <Button Content="AC" 
+            HorizontalAlignment="Left" 
+            Margin="450,100,0,0" 
+            VerticalAlignment="Top" 
+            Width="75" 
+            Height="75" 
+            FontSize="24" 
+            Click="ClearButton_Click" />
+
+        <Button Content="(" 
+            HorizontalAlignment="Left" 
+            Margin="550,100,0,0" 
+            VerticalAlignment="Top" 
+            Width="75" 
+            Height="75" 
+            FontSize="24" 
+            Click="NumberButton_Click" />
+
+        <Button Content=")" 
+            HorizontalAlignment="Left" 
+            Margin="650,100,0,0" 
+            VerticalAlignment="Top" 
+            Width="75" 
+            Height="75" 
+            FontSize="24" 
+            Click="NumberButton_Click" />
+
+        <Image Source="/p.png" Margin="570,275,0,-20"/>
+       
+    </Grid>
+  </Window> 
+<!-- Program Over -->

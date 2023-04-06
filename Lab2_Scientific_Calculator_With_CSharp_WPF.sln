@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_Scientific_Calculator_With_CSharp_WPF", "Lab2_Scientific_Calculator_With_CSharp_WPF.csproj", "{DF5CF846-42E9-4267-B3D6-A85DD6C90A9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF5CF846-42E9-4267-B3D6-A85DD6C90A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5CF846-42E9-4267-B3D6-A85DD6C90A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5CF846-42E9-4267-B3D6-A85DD6C90A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5CF846-42E9-4267-B3D6-A85DD6C90A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7DE478B-3EFC-495B-8721-FA2DC572D9E2}
+	EndGlobalSection
+EndGlobal
